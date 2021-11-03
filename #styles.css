@@ -1,0 +1,99 @@
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+      border-bottom: solid black 2px;
+  }
+.display-2{
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+
+.display-3{
+    text-align: left;
+    padding-bottom: 5px;
+    
+}
+
+.card-img-top{
+     
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 200px;
+      border: solid black 2px;
+}
+
+/* estaba haciendo un botón pero salió mal ndea, fix it pls*/
+
+.go-to-container{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 66px;
+        height: 66px;
+        z-index: -1;
+}
+
+.go-to-button{
+        width: 0px;
+        height: 0px;
+        background: #002b5c;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+}
+
+.go-to-button i{
+        position: absolute;
+        font-size: 17px;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: white;
+        transition: .2s;
+}
+
+.show{
+        z-index: 10;
+}
+
+.show .go-to-button{
+        animation: popup .3s ease-in-out;
+        width: 66px;
+        height: 66px;
+        z-index: 11;
+}
+
+.show i {
+        transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0px;
+        height: 0px; 
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    100%{
+        width: 66px;
+        height: 66px;
+    }
+}    
+
+h6{
+    color:purple
+}
